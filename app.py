@@ -16,7 +16,7 @@ app = dash.Dash(__name__,external_stylesheets=external_stylesheets)
 
 # app layout
 server = app.server
-app.title='Covid19 Dashboard'
+app.title='Covid-19 Dashboard'
 
 REMOTE_DATAFILE = "https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide.xlsx"
 
@@ -326,4 +326,4 @@ def update_graph(countries,yvalue,signaltype,yaxistype,popFlag,maFlag,extrapFlag
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
