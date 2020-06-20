@@ -39,7 +39,7 @@ def read_coviddata(filename=REMOTE_DATAFILE,popThr=200000):
     dfw = dfw.rename(columns={'dateRep':'date',
                               'countriesAndTerritories':'country',
                               'countryterritoryCode':'countryCode',
-                              'popData2018':'population',
+                              'popData2019':'population',
                               'continentExp':'continent'})
     # drop cols
     dfw= dfw.drop(columns=['day','month','year'])
