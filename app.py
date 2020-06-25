@@ -245,7 +245,7 @@ app.layout = html.Div(children=[
         ,style={'width': '22%', 'display': 'inline-block'}
         ),
 
-    dcc.Graph(id='timeplot',style={'width':'74%','float':'right','margin':'22px' })
+    dcc.Graph(id='timeplot',style={'width':'77%','float':'right' })
 ])
 
 # APP callback
@@ -326,4 +326,4 @@ def update_graph(countries,yvalue,signaltype,yaxistype,popFlag,maFlag,extrapFlag
 
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
